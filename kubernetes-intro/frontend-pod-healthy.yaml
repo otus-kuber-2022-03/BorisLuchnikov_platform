@@ -25,4 +25,6 @@ spec:
     - name: AD_SERVICE_ADDR
       value: "adservice:9555"
     resources: {}
+  dnsPolicy: ClusterFirst
   restartPolicy: Never
+status: {}

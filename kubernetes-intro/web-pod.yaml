@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: web-app-pod
+  name: web
   labels:
     enviroment: test
     app: nginx
@@ -22,3 +22,6 @@ spec:
   volumes:
     - name: app
       emptyDir: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
