@@ -20,7 +20,7 @@ spec:
         ports:
         - containerPort: 8080
         readinessProbe:
-          initialDelaySeconds: 10
+          initialDelaySeconds: 1
           httpGet:
             path: "/_healthz"
             port: 8080
